@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Trump-flavored Fake News Generator">
+	<meta name="keywords" content="trump, fake news, generator">
+	<meta name="author" content="Aaron & Darshana">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FAKE NEWS</title>
+	  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	  <link rel="stylesheet" href="style.css">
+</head>
+<body class="clearfix">
+	<div class="bgUnderlay"></div>
+	<div class="container">
+		<div class="marquee">
+			<div>
+				<span>"Sorry losers and haters, but my I.Q. is one of the highest -and you all know it! Please don't feel so stupid or insecure, it's not your fault" - Donald J. Trump, 45th President of the United States of America</span>
+				<span>"Sorry losers and haters, but my I.Q. is one of the highest -and you all know it! Please don't feel so stupid or insecure, it's not your fault" - Donald J. Trump, 45th President of the United States of America</span>
+			</div>
+		</div>
+		<div class="wrapper ">
+		<header>
+			<div class="logoWrapper">
+				<a href=""><div class="logo">FNG</div>
+				<p class="subtitle">Fake News Generator</p></a>
+			</div>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="http://thoughtcatalog.com/lorenzo-jensen-iii/2015/07/50-donald-trump-quotes-that-are-so-dumb-theyll-make-your-brain-hurt/">home</a></li>
+				<li><a href="http://abcnews.go.com/">USA News</a></li>
+				<li><a href="http://www.cbsnews.com/">americanews</a></li>
+				<li><a href="http://www.politifact.com/">truthys</a></li>
+				<li><a href="http://www.breitbart.com/">falseys</a></li>
+				<li><a href="https://www.linkedin.com/in/rishabh-yadav-994a9a178/">about</a></li>
+				<li><a href="http://freshlybuilt.com/">contact</a></li>
+			</ul>
+		</nav>
+		<main id="main">
+			
+			<article id="newsArticle" class="clearfix">
+				<div class="breakingNewsWrapper">
+					<p class="breakingnews">Breaking News</p>
+				</div>
+				<div class="headlineWrapper">
+					<h1 class="headline"></h1>
+				</div>
+				<div class="contentWrapper clearfix">
+					
+					<div class="image-thing">
+						<div id="layer3"></div>
+						<div id="layer2"></div>
+						<div id="layer1"></div>
+					</div>
+					<div class="text-block">
+						<div class="meta-data">
+							<h3>BY <span class="meta-author">a Serious Journalist</span> </h3>
+						</div>
+						<p class="paragraph"></p>
+					</div>
+				</div>
+
+				<div class="toolboxMenu">
+					<button class="toolboxButton clickClose">Choose Your News!</button>
+				</div>
+			</article>
+			<aside id="toolbox">
+				<h1 class="">Choose Your News</h1>
+				<form id="chooseNews" class="buttonBox">
+					<input id="authorName" type="text" class="submitWriter" placeholder="Who's writing the Fake News?" autofocus="yes">
+					<h3 class="">Headline subject:</h3>
+					<fieldset id="group1" class="group">
+						<input type="radio" name="group1" value="himself" id="one-one" required></input><!--
+						--><label for="one-one">Trump</label><!--
+						--><input type="radio" name="group1" value="opponent" id="one-two" required></input><!--
+						--><label for="one-two">His enemies</label><!--
+						--><input type="radio" name="group1" value="policy" id="one-three" required></input><!--
+						--><label for="one-three">His Policies</label>
+					</fieldset>
+					<h3 class="">Truthy-ness Factor:</h3>
+					<fieldset id="group2">
+						<input type="radio" name="group2" value="dubious" id="outrage-one" required></input><!--
+						--><label for="outrage-one">Dubious</label><!--
+						--><input type="radio" name="group2" value="doubtful" id="outrage-two" required></input><!--
+						--><label for="outrage-two">Doubtful</label><!--
+						--><input type="radio" name="group2" value="donald" id="outrage-three" required></input><!--
+						--><label for="outrage-three">THE DONALD</label>
+					</fieldset>
+					<button type="submit" class="Trump-it">TRUMP IT UP!</button>
+				</form>
+			</aside>
+			
+		</main>
+		<footer>
+			<p><span>Trump'd Up Fake News</span> brought to you by <a href="https://www.linkedin.com/in/rishabh-yadav-994a9a178/">Rishabh</a> & <a href="http://Freshlybuilt.com/">Freshlybuilt</a> &copy; 2020</p>
+			<a class="twitter-share-button"
+			
+			  data-size="large">
+			Tweet</a>
+		</footer>
+		</div>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous"></script>
+
+	  <script type="text/javascript" src="script.js"></script>
+
+	  <script>window.twttr = (function(d, s, id) {
+	    var js, fjs = d.getElementsByTagName(s)[0],
+	      t = window.twttr || {};
+	    if (d.getElementById(id)) return t;
+	    js = d.createElement(s);
+	    js.id = id;
+	    js.src = "https://platform.twitter.com/widgets.js";
+	    fjs.parentNode.insertBefore(js, fjs);
+
+	    t._e = [];
+	    t.ready = function(f) {
+	      t._e.push(f);
+	    };
+
+	    return t;
+	  }(document, "script", "twitter-wjs"));</script>
+</body>
+</html>
