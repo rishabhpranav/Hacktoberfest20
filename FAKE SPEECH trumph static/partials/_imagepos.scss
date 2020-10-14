@@ -1,0 +1,63 @@
+.image-thing{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin-bottom:2rem;
+	 div{
+		position: absolute;
+		top:0;right:0;bottom:0;left:0;
+		background-size:cover;
+		background-position: center center;
+		background-repeat:no-repeat;
+		z-index:1;
+	}
+	.layer1{
+		background-position: center left ;
+		background-size:contain;
+	}
+	 .layer2{
+		background-position: center center;
+		background-size:cover;
+	}
+	 .trumphead{
+		background-position: 9.5rem 3rem;
+		background-size:13%;
+		transform:scaleX(-1) rotate(20deg);
+	}
+	.trumpraise{
+		background-position: center 5rem ;
+		background-size:cover;
+	}
+	.trumpred{
+		background-position: center 5rem;
+	}
+	.eldiablotext{
+		background-size:contain;
+		background-position: center -4rem;
+	}
+	.mexicoflag{
+		background-position: center center;
+	}
+
+	.trumpfingerguns{
+		background-size: contain;
+		background-position: bottom center;
+	}
+	.battleshipbg{
+		background-position: center center;
+	}
+	.trumphands{
+		background-position: -7rem center;
+	}
+	.trumpconfused{
+		background-size:50%;
+	}
+	.earthbg{
+		background-size:150%;
+		background-size: contain;
+	}
+	.honesty{
+		background-size: contain;
+		background-color: white;
+	}
+}

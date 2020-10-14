@@ -1,0 +1,275 @@
+$toolboxWidth: 40rem;
+
+@import "partials/setup";
+@import "partials/aside.scss";
+
+@import "partials/imagepos";
+
+body{
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	background-color:rgba(0,4,23,1);
+}
+body *{
+	color:white;
+}
+a, button, input, label, header, header *{
+	transition: all 0.3s ease;
+}
+h1{
+	font-size:1.7rem;
+}
+.bgUnderlay{
+	z-index:-99;
+	position:absolute;
+	top:0;right:0;bottom:0;left:0;
+	background: linear-gradient(rgba(0,10,71,0.7), rgba(0,4,23,0.95)), url(assets/trump.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+.marquee {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  width: 100%;
+  background:rgba(0,0,0,0.9);
+  border-bottom:2px solid darkred;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee div {
+  width: 200%;
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 12s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  width: 50%;
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+header{
+	position: relative;
+	display:flex;
+	justify-content: space-between;
+}
+header .logoWrapper {
+	width:100%;
+	display:inline-block;
+	text-shadow:0px 4px 16px rgba(0,0,0,0.6);
+	a{
+		text-decoration: none;
+		.logo:hover{
+			color:red;
+		}
+	}
+	&:hover *{
+		transition: all 0.3s ease;
+		transform:translateY(-0.15rem);
+		text-shadow:0px 8px 24px rgba(0,0,0,0.9);
+		color:red;
+	}
+}
+.toolboxMenu{
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	justify-content: flex-end;
+	position: relative;
+}
+.toolboxButton{
+	align-self:flex-end;
+	padding:1.5rem;
+	background:red;
+
+}
+.container{
+width:100%;
+
+}
+nav{
+	margin-top:2rem;
+}
+nav ul{
+	margin:0;
+	padding:0;
+	display:flex;
+	width:100%;
+	justify-content: space-around;
+	flex-wrap:wrap;
+}
+nav ul li{
+	list-style: none;
+	flex-grow: 1;
+	a{
+		z-index:-1;
+		display:block;
+		border-top:1px solid black;
+		border-bottom:2px solid #666666;
+		width:100%;
+		background:rgba(0,0,0,1);
+		margin:auto;
+		text-align: center;
+		padding:1rem 0.5rem;
+		text-transform: uppercase;
+		text-decoration: none;
+		box-shadow:0px 4px 16px rgba(0,0,0,0.6);
+	&:hover{
+		z-index:10;
+		border-top:1px solid #494949;
+		background:#383838;
+		border-bottom:2px solid red;
+		box-shadow:0px 8px 24px rgba(0,0,0,0.9);
+		// transform:scaleY(1.1);
+
+		}
+		&:focus{
+		outline:2px solid red;
+		outline-offset:-2px;
+		}
+		&:active{
+		outline:0px solid red;
+		outline-offset:-2px;
+		}
+	}
+
+}
+.wrapper{
+	transition:all 0.9s ease;
+	max-width:1260px;
+	margin:auto;
+	padding:2rem 2rem 2rem 2rem;
+}
+
+article{
+	display:none;
+	padding-top:1.5rem;
+	margin-top:1.5rem;
+	// padding-top:2rem;
+	
+}
+.logo{
+	font-size:4rem;
+	font-weight:700;
+	margin:0 0 0 0;
+	line-height: 0.8;
+	letter-spacing: -3px;
+}
+.subtitle{
+	margin:0 0.2rem;
+}
+
+.headlineWrapper{
+	display:block;
+}
+.breakingNewsWrapper{
+	position: relative;
+	z-index:10;
+	display:inline-block;
+	background:red;
+	margin:0;
+	&::after{
+		content: "";
+		position: absolute;
+		height:100%;
+		width:100%;
+		z-index:-1;
+		top:0;
+		right:0;
+		left:auto;
+		transform:skewX(45deg);
+		transform-origin:top;
+		background:red;
+	}
+	p{
+		padding:0.75rem 1rem;
+		margin: auto 0;
+		text-transform: uppercase;
+		font-weight:500;
+		font-size:1.2rem;
+	}
+}
+.headline{
+	margin:0;
+	padding:1rem 2rem;
+	background:white;
+	color:red;
+}
+.contentWrapper{
+	display:flex;
+	padding:2rem 2rem;
+	background:rgba(0,0,0,0.6);
+}
+.image-thing{
+	flex-basis:40%;
+	height:0;
+	padding-top:40%;
+	border:2px solid white;
+	float:left;
+	margin-right:2rem;
+	margin-bottom:0rem;
+	background-image: url(assets/fnLogo.jpg);
+	background-size: contain;
+	background-color: white;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.text-block{
+	flex-basis:60%;
+}
+.meta-data{
+	display:flex;
+	justify-content: space-between;
+	h2{
+		margin-top:0;
+	}
+}
+.paragraph{
+	font-size:1.3rem;
+	line-height:1.5;
+	margin-top:0;
+}
+
+.toolboxClose{
+	opacity:0;
+	transform:scaleY(0);
+	height:0;
+}
+.toolboxButton{
+		background:linear-gradient(#FFDD7A,#FFC200, #CD6F1D);
+		border:none;
+		padding:1.5rem;
+		font-weight:900;
+		font-size:2rem;
+		margin: 2rem auto 0 auto;
+		color:black;
+		box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+		&:hover{
+			background:linear-gradient(#FEEBB7,#FFDF7F, #DF8E1F);
+		}
+	}
+footer {
+	text-align: center;
+}
+footer p{
+	margin-top:4rem;
+}
+footer a:hover, footer p span {
+	color: red;
+}
+
+#twitter-widget-0{
+	margin-top:1rem;
+}
+//
+@import "partials/mq";

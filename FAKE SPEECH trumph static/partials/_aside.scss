@@ -1,0 +1,143 @@
+aside{
+	transition: all 0.3s ease;
+	transform-origin:100% 0%;
+	opacity:1;
+	z-index:50;
+	transition: all 0.3s ease;
+	// position:absolute;
+	// top:6rem;
+	// right:0;
+	padding:0 2rem;
+	width:100%;
+	max-width:40rem;
+	margin:3rem auto;
+	border-top:1px solid rgba(255,255,255,0.3);
+	box-shadow: 0px 4px 8px rgba(0,0,0,0.6);
+	border-radius:5px;
+	background: linear-gradient(rgba(3, 6, 29, 0), rgba(20, 29, 131, 0.8));
+	background-position:center center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	#chooseNews{
+		display:flex;
+		flex-direction:column;
+		display:flex;
+	}
+
+	fieldset{
+		margin:0;
+		padding:0;
+		border:none;
+		font-size:0;
+
+	}
+	label{
+		z-index:10;
+		font-size:1rem;
+		width:calc(100%/3);
+		border-top:2px solid rgba(0,0,0,0.0);
+		border-bottom:2px solid #666666;
+		border-right:2px solid #222da5;
+		text-align:center;
+		display:inline-block;
+		background: rgba(0,0,0,0.8);
+		padding:1rem;
+		margin:0rem 0;
+		cursor:pointer;
+		box-shadow:0px 4px 16px rgba(0,0,0,0.6);
+		&:hover{
+			z-index:20;
+			border-top:2px solid rgba(0,0,0,0.0);
+			background:#383838;
+			border-bottom:2px solid red;
+			box-shadow:0px 8px 24px rgba(0,0,0,0.9);
+		}
+	}
+	label:last-child{
+		border-right: none;
+	}
+	h1, h2, h3{
+		margin:0;
+		padding:1.5em 0 1em 0;
+	}
+	h1{
+		text-align: center;
+		font-size:2.5rem;
+		padding: 2rem 0 1.5rem 0;
+		// text-transform: uppercase;
+		text-shadow:0px 4px 8px rgba(0,0,0,0.7);
+	}
+	.submitWrapper{
+		display:flex;
+	}
+	#authorName{
+		border:none;
+		border-bottom:2px solid #666;
+		flex-grow:1;
+		background:rgba(0,0,0,0.4);
+		color:white;
+		padding:1rem;
+		&:focus{
+			border-color:red;
+			outline:none;
+			background:rgba(0,0,0,0.8);
+		}
+	}
+	.submitMeta{
+		border:none;
+		border-top: 2px solid transparent;
+	    border-bottom: 2px solid #666666;
+	    text-align: center;
+	    display: inline-block;
+	    background: rgba(0, 0, 0, 0.8);
+	    padding: 1rem;
+	    margin: 0rem 0;
+	    margin-left:0.5rem;
+	    cursor: pointer;
+	    font-weight: 700;
+	    text-transform: uppercase;
+	    box-shadow: 0px 4px 16px rgba(0,0,0,1);
+	    &:hover{
+	    	border-top:2px solid rgba(0,0,0,0.0);
+	    	background:#383838;
+	    	border-bottom:2px solid red;
+	    	box-shadow:0px 8px 24px rgba(0,0,0,0.9);
+	    }
+	    &:active{
+			background:red;
+			border-top:1px solid #494949;
+			border-bottom:2px solid white;
+			box-shadow:0px 8px 24px rgba(0,0,0,0.9);
+			}
+		}
+	form input[type='radio']{
+		display:none;	
+		&:checked + label{
+			z-index:20;
+			background:red;
+			border-top:1px solid #494949;
+			border-bottom:2px solid white;
+			box-shadow:0px 8px 24px rgba(0,0,0,0.9);
+			padding:1rem;
+			flex-grow:2;
+		}
+	}
+
+	.clickClose{
+		cursor:pointer;
+	}
+	.Trump-it{
+		flex-grow:1;
+		width:100%;
+		background:linear-gradient(#FFDD7A,#FFC200, #CD6F1D);
+		border:none;
+		padding:1.5rem;
+		font-weight:900;
+		font-size:2rem;
+		margin: 2rem 0;
+		color:black;
+		&:hover{
+			background:linear-gradient(#FEEBB7,#FFDF7F, #DF8E1F);
+		}
+	}
+}
